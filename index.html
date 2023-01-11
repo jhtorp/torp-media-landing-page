@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("SuMszKb6Tev7wsMD8");
+        })();
+    </script>
     <title>Torp Media</title>
 </head>
 
@@ -57,27 +64,31 @@
             <div class="cards">
                 <div class="card card-1">
                     <div class="card__img"></div>
-                    <div class="card__h"><span class="card__h--indicator">01</span>Rimelig, bra</div>
+                    <div class="card__h"><span class="card__h--indicator">01</span>Rimelig</div>
                     <div class="card__info-container">
-                        <p class="card__info"> Velg våre tjenester for en profesjonell nettside til en rimelig
-                            pris. Vi tilbyr kvalitetssikrede løsninger som sikrer at nettsiden din vil se bra ut og
-                            fungere
-                            optimalt. Våre erfarne utviklere gjør at vi kan tilby rimelige priser uten å ofre på
-                            kvaliteten.
-                            Med oss får du en god deal på en profesjonell nettside</p>
+                        <p class="card__info">
+                            Hvis du er på jakt etter en rimelig og profesjonell webdesign-tjeneste, har du kommet til
+                            rett sted. Som en-manns-bedrift tilbyr jeg håndkodede nettsider til fornuftige priser. Jeg
+                            har stor erfaring i å lage nettsider som både ser bra ut og er enkle å bruke. Sammen med
+                            kundene mine skaper jeg en unik nettside som passer deres behov og overgår forventningene
+                            deres. Jeg legger stor vekt på å skape en god brukeropplevelse og øke synligheten og
+                            effektiviteten til din bedrift på nett
+                        </p>
                     </div>
                 </div>
                 <div class="card card-2">
                     <div class="card__img"></div>
                     <div class="card__h"><span class="card__h--indicator">02</span>Håndlaget</div>
                     <div class="card__info-container">
-                        <p class="card__info"> Velg våre tjenester for å få en unik, håndlaget nettside. Våre
+                        <p class="card__info">
+                            Velg våre tjenester for å få en unik, håndlaget nettside. Våre
                             utviklere lager alltid nettsider fra bunnen av, for å sikre at nettsiden din er skreddersydd
                             for
                             akkurat ditt firma eller din bedrift. Vi tar deg og dine ønsker i betraktning gjennom hele
                             prosessen, fra design til funksjonalitet. En håndlaget nettside gir deg også muligheten for
                             å
-                            skille deg ut fra mengden og reflekterer akkurat ditt firma</p>
+                            skille deg ut fra mengden og reflekterer akkurat ditt firma
+                        </p>
                     </div>
                 </div>
 
@@ -85,7 +96,8 @@
                     <div class="card__img"></div>
                     <div class="card__h"><span class="card__h--indicator">03</span>Responsivt</div>
                     <div class="card__info-container">
-                        <p class="card__info">Velg våre tjenester for å få en enkel og brukervennlig nettside.
+                        <p class="card__info">
+                            Velg våre tjenester for å få en enkel og brukervennlig nettside.
                             Vi legger alltid stor vekt på å lage nettsider som er intuitive og enkle å navigere.
                             Enkelhet er
                             også viktig for at dine besøkende skal ha en god opplevelse. Vi sørger for at nettsiden er
@@ -93,14 +105,37 @@
                             å laste inn og optimalisert for å vises på ulike enheter. Vi kan også hjelpe deg med å holde
                             nettsiden din oppdatert og vedlikeholdt, slik at du kan fokusere på det viktigste, å drive
                             din
-                            bedrift</p>
+                            bedrift
+                        </p>
                     </div>
                 </div>
             </div>
 
         </section>
-    </main>
 
+        <section class="contact-form-container">
+            <div class="name-container form-containers">
+                <label for="name">Navn</label>
+                <input type="text" id="name" placeholder="Ditt navn">
+            </div>
+
+            <div class="email-container form-containers">
+                <label for="email">E-post</label>
+                <input type="email" id="email" placeholder="Din e-post">
+            </div>
+            <div class="message-container form-containers">
+                <label for="message">Melding</label>
+                <textarea placeholder="Din melding" id="message" cols="5" rows="4"></textarea>
+            </div>
+            <div class="btn-container">
+                <button class="send-btn" onclick="sendMail()">Send</button>
+            </div>
+
+        </section>
+
+
+    </main>
+    <script src="app.js"></script>
 </body>
 
 </html>
