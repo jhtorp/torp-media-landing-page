@@ -104,6 +104,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 :root {
@@ -234,7 +235,6 @@ body {
 }
 
 .cards {
-    position: relative;
     width: 90%;
     max-width: 375px;
     height: auto;
@@ -341,7 +341,7 @@ label {
 @media screen and (min-width: 820px) {
     .nav-container {
         width: 820px;
-        padding-inline: 20px;
+        padding-inline: 10px;
     }
 
     .main-container {
@@ -357,22 +357,49 @@ label {
         max-width: 820px;
         flex-direction: row;
         justify-content: space-between;
-        gap: none;
+        gap: 20px;
     }
+
+    .card-container {
+        flex: 1;
+    }
+
+    .cards-container {
+        height: 400px;
+
+    }
+
+    .card__info {
+        font-size: 14px;
+    }
+
+    .card {
+        height: 400px;
+    }
+
+
+
 
 
     /* Contact section */
 
     .contact-section {
         max-width: 820px;
-        margin: 0 auto;
+        margin: 128px auto 128px auto;
         display: flex;
+        align-items: center;
+        padding-inline: 15px;
     }
 
     .message-illustration-container {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 50%;
+    }
+
+    .contact-form-container {
+        width: 50%;
     }
 
 }
