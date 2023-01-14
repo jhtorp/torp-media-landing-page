@@ -34,7 +34,7 @@
             <div class="hero__text-container">
                 <div class="hero__h1-container">
                     <h1 class="hero__h1">
-                        Moderne nettsider 100% fra bunnen av
+                        Moderne nettsider<br>100% fra bunnen av
                     </h1>
                 </div>
                 <div class="hero__info-container">
@@ -48,15 +48,16 @@
                     <button class="hero__cta--btn">
                         Book et møte
                     </button>
-                    <p class="hero__cta--info">
+                    <span class="hero__cta--info">
                         Book et gratis online-møte
                         så finner vi fort ut av om vi er en match!
-                    </p>
+                    </span>
                 </div>
             </div>
 
             <div class="hero__img-container">
-                <img src="./Bilder/Growth Business-mobile.svg" alt="">
+                <img class="hero__img--mobile" src="./Bilder/Growth Business-mobile.svg" alt="">
+                <img class="hero__img--desktop" src="./Bilder/Growth Business.svg" alt="">
             </div>
         </section>
     </main>
@@ -64,14 +65,15 @@
         <div class="cards">
             <div class="card-container">
                 <div class="card card-1">
-                    <div class="card__img"></div>
-                    <div class="card__h"><span class="card__h--indicator">01</span>Rimelig</div>
+                    <div class="card__img"><img src="./bilder/piggy-bank.svg" alt=""></div>
+                    <div class="card__h">
+                        <h3><span class="card__h--indicator">01</span>Rimelig</h3>
+                    </div>
                     <div class="card__info-container">
                         <p class="card__info">
-                            Hvis du er på jakt etter en rimelig og profesjonell nettside, har du kommet til rett sted.
-                            Selvom det er rimelig går det ikke ut over kvalitet. Jeg vil jobbe tett med deg gjennom hele
-                            prosessen fra start til slutt og sammen finner vi løsningen som best passer deg og din
-                            bedrift
+                            Hvis du er på jakt etter en rimelig og høykvalitets nettside, har du kommet til rett sted.
+                            Jeg vil jobbe tett sammen med deg gjennom hele prosessen for å skape en nettside med
+                            tilpasset design, funksjonalitet og brukeropplevelse for deg og din bedrift's behov.
 
 
                         </p>
@@ -80,14 +82,16 @@
             </div>
             <div class="card-container">
                 <div class="card card-2">
-                    <div class="card__img"></div>
-                    <div class="card__h"><span class="card__h--indicator">02</span>Håndlaget</div>
+                    <div class="card__img"><img src="./bilder/display-code.svg" alt=""></div>
+                    <div class="card__h">
+                        <h3><span class="card__h--indicator">02</span>Håndlaget</h3>
+                    </div>
                     <div class="card__info-container">
                         <p class="card__info">
 
                             Med en håndlaget nettside får du en rask og pålitelig nettside. Hver linje med kode er
-                            fysisk skrevet inn for en skreddersydd løsning, optimalisert for deg og dine behov. fysisk
-                            skrevet inn for en skreddersydd løsning, optimalisert for deg og dine behov
+                            fysisk skrevet inn for en skreddersydd løsning, optimalisert for deg og dine behov. Koden er
+                            også optimalisert for å øke synligheten din på søkeplatformer som Google
 
                         </p>
                     </div>
@@ -95,15 +99,17 @@
             </div>
             <div class="card-container">
                 <div class="card card-3">
-                    <div class="card__img"></div>
-                    <div class="card__h"><span class="card__h--indicator">03</span>Responsivt</div>
+                    <div class="card__img"><img src="./bilder/laptop-mobile.svg" alt=""></div>
+                    <div class="card__h">
+                        <h3><span class="card__h--indicator">03</span>Responsivt</h3>
+                    </div>
                     <div class="card__info-container">
                         <p class="card__info">
 
                             På nettet i dag kommer majoriteten av trafikken fra mobiltelefoner. Derfor er det viktig å
                             ha en nettside der alle besøkende får det samme gode førsteinntrykket, uavhengig av
-                            hvilken enhet de bruker. Jeg tilbyr nettsider som
-                            er tilpasset alle skjermer men opprettholder samme brukervennlighet
+                            skjermstørrelse. Jeg tilbyr nettsider som
+                            er tilpasset alle skjermer men fortsatt opprettholder den samme brukervennlighet
 
                         </p>
                     </div>
@@ -114,28 +120,34 @@
     </section>
 
     <section class="contact-section">
-        <div class="contact-form-container">
-            <div class="name-container form-containers">
-                <label for="name">Navn</label>
-                <input type="text" id="name" placeholder="Ditt navn">
-            </div>
-
-            <div class="email-container form-containers">
-                <label for="email">E-post</label>
-                <input type="email" id="email" placeholder="Din e-post">
-            </div>
-            <div class="message-container form-containers">
-                <label for="message">Melding</label>
-                <textarea placeholder="Din melding" id="message" cols="5" rows="4"></textarea>
-            </div>
-            <div class="btn-container">
-                <button class="send-btn" onclick="sendMail()">Send</button>
-            </div>
-
+        <div class="contact__h">
+            <h2 class="contact__h2">Kontakt</h2>
+            <h3 class="contact__sub-h">Hva kan jeg hjelpe deg med?</h3>
         </div>
+        <div class="contact__form-img-container">
+            <div class="contact-form-container">
+                <div class="name-container form-containers">
+                    <label for="name">Navn</label>
+                    <input type="text" id="name" placeholder="Ditt navn">
+                </div>
 
-        <div class="message-illustration-container">
-            <img src="./Bilder/send-illustartion.png" alt="">
+                <div class="email-container form-containers">
+                    <label for="email">E-post</label>
+                    <input type="email" id="email" placeholder="Din e-post">
+                </div>
+                <div class="message-container form-containers">
+                    <label for="message">Melding</label>
+                    <textarea placeholder="Din melding" id="message" cols="5" rows="4"></textarea>
+                </div>
+                <div class="btn-container">
+                    <button class="send-btn" onclick="sendMail()">Send</button>
+                </div>
+
+            </div>
+
+            <div class="message-illustration-container">
+                <img src="./Bilder/send-illustartion.png" alt="">
+            </div>
         </div>
     </section>
 
