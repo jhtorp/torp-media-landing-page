@@ -26,7 +26,7 @@
             <h1 class="logo">Torp Media</h1>
         </div>
         <div class="nav__cta">
-            <button class="cta-btn">Kontakt</button>
+            <a href="#contact"><button href="#contact" class="cta-btn">Kontakt</button></a>
         </div>
     </nav>
     <main class="main-container">
@@ -45,9 +45,9 @@
                     </p>
                 </div>
                 <div class="hero__cta-container">
-                    <button class="hero__cta--btn">
-                        Book et møte
-                    </button>
+                    <a href="#contact"><button href="contact" class="hero__cta--btn">
+                            Book et møte
+                        </button></a>
                     <span class="hero__cta--info">
                         Book et gratis online-møte
                         så finner vi fort ut av om vi er en match!
@@ -119,28 +119,41 @@
 
     </section>
 
+
+
     <section class="contact-section">
         <div class="contact__h">
-            <h2 class="contact__h2">Kontakt</h2>
+            <h2 class="contact__h2" id="contact">Kontakt</h2>
             <h3 class="contact__sub-h">Hva kan jeg hjelpe deg med?</h3>
         </div>
         <div class="contact__form-img-container">
+            <div class="contact__message-sent">
+                <div class="sent__icon"><img src="./Bilder/check.svg" alt=""></div>
+                <div class="sent__h">
+                    <h3>Takk for meldingen!</h3>
+                </div>
+                <div class="sent__p">
+                    <h4>Du vil høre fra meg innen kort tid</h4>
+                </div>
+
+            </div>
             <div class="contact-form-container">
                 <div class="name-container form-containers">
-                    <label for="name">Navn</label>
-                    <input type="text" id="name" placeholder="Ditt navn">
+                    <label for="myName">Navn</label>
+                    <input type="text" id="myName" placeholder="Ditt navn" required>
                 </div>
 
                 <div class="email-container form-containers">
-                    <label for="email">E-post</label>
-                    <input type="email" id="email" placeholder="Din e-post">
+                    <label for="myEmail">E-post</label>
+                    <input type="email" id="myEmail" placeholder="Din e-post" required>
                 </div>
                 <div class="message-container form-containers">
-                    <label for="message">Melding</label>
-                    <textarea placeholder="Din melding" id="message" cols="5" rows="4"></textarea>
+                    <label for="myMessage">Melding</label>
+                    <textarea placeholder="Din melding" id="myMessage" cols="5" rows="4" required></textarea>
                 </div>
+
                 <div class="btn-container">
-                    <button class="send-btn" onclick="sendMail()">Send</button>
+                    <button onClick="sendMail()" class="send-btn">Send</button>
                 </div>
 
             </div>
@@ -149,9 +162,18 @@
                 <img src="./Bilder/send-illustartion.png" alt="">
             </div>
         </div>
+
     </section>
 
 
+
+    <footer class="footer-container">
+
+
+        <div class="footer__info">&#169;Torp Media - Org nr: 930 612 626</div>
+
+
+    </footer>
 
 
     <script src="app.js"></script>
