@@ -142,6 +142,12 @@ body {
     font-size: 20px;
     font-weight: 600;
     color: var(--f-clr--primary);
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
 }
 
 .cta-btn {
@@ -168,13 +174,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 32px;
-    margin-bottom: 48px;
 }
 
 
 .hero__text-container {
     flex: 1;
+    margin-top: 48px;
     margin-bottom: 48px;
     margin-inline: 15px;
 }
@@ -383,6 +388,11 @@ label {
     background: var(--primary);
     border-radius: 8px;
     color: white;
+}
+
+.send-btn:hover {
+    background: var(--hover);
+    cursor: pointer;
 }
 
 
